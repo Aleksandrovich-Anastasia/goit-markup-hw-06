@@ -279,12 +279,21 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/people-office-min.jpg);
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-
+@media (min-resolution: 2x) {
+  .section-hello {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-@2x-min.jpg);
+  }
+}
 .section-hello .container {
   display: flex;
   flex-direction: column;
@@ -699,6 +708,7 @@ button {
     text-align: left;
   }
   .footer-subscribe {
+    width: 453px;
   }
   .form-subscribe {
     display: flex;
@@ -732,8 +742,8 @@ button {
   .footer-part1 {
     margin-right: 120px;
   }
-  .footer-soc {
-    margin-right: 80px;
+  .footer-subscribe {
+    margin-left: auto;
   }
 }
 /* -----------------BACKDROP------------------- */
